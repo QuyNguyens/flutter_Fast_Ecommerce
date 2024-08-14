@@ -17,6 +17,11 @@ dependencies:
   flutter_adaptive_scaffold: ^0.1.8
   async: ^2.11.0
   cupertino_icons: ^1.0.6
+  dots_indicator: ^2.1.1
+  photo_view: ^0.15.0
+  google_fonts: ^6.2.1
+  dotted_border: ^2.1.0
+
 
 dev_dependencies:
   flutter_test:
@@ -31,5 +36,4 @@ flutter:
         - asset: fonts/RobotoSerif-Regular.ttf
   assets:
     - assets/images/
-
   uses-material-design: true

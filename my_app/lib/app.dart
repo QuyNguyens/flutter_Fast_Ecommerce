@@ -1,7 +1,6 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:my_app/ui/cart/bloc/cart_bloc.dart';
 import 'package:my_app/ui/cart/view/cart_page.dart';
 import 'package:my_app/ui/category/view/category_page.dart';
@@ -13,10 +12,11 @@ import 'package:my_app/ui/profile/view/profile_page.dart';
 
 class App extends MaterialApp {
   
-  static const Color seedColor = Color(0xAAC32361);
-
+  static const Color seedColor = Color.fromARGB(255, 247, 0, 115);
+  static const Color subPriceColor = Color.fromARGB(255, 147, 142, 144);
+  
     App({super.key}) : super(
-    title: "Cross Pic",
+    title: "Fast Ecommerce",
     debugShowCheckedModeBanner: false,
     routes: {
       '/category':(context) => const CategoryPage(),
@@ -27,7 +27,7 @@ class App extends MaterialApp {
     },
     theme: ThemeData(
       useMaterial3: true,
-      fontFamily: 'RobotoSerif',
+      fontFamily: GoogleFonts.robotoSerif().fontFamily,
       // Define the default brightness and colors.
       colorScheme: ColorScheme.fromSeed(
         seedColor: seedColor,
